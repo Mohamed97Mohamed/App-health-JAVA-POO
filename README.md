@@ -1,6 +1,6 @@
 # App health JAVA POO
 ## Introducción
-El objetivo de este proyecto es aplicar conocimientos avanzados de Programación Orientada a Objetos (POO). Se busca afianzar los conceptos básicos de POO y abordar temas avanzados como herencia y polimorfismo. El proyecto consiste en desarrollar una aplicación de control de salud y actividad física que permita dar de alta perfiles de personas, realizar modificaciones del peso, registrar actividades de running, cycling y swimming, y generar informes.
+El objetivo de este proyecto es aplicar conocimientos avanzados de Programación Orientada a Objetos (POO). Se busca afianzar los conceptos básicos de POO y abordar temas avanzados como herencia y polimorfismo. El proyecto consiste en desarrollar una aplicación de control de salud y actividad física que permita dar de alta perfiles de personas, realizar modificaciones del peso, registrar actividades de running, cycling y swimming, y generar informes. Se ha utilizado Java versión 1.7 o 1.8.
 
 ## Funcionalidades
 Hoy en día, es común encontrar aplicaciones de control de salud y actividad física. Este proyecto propone desarrollar una aplicación que cubra las funcionalidades básicas de este tipo de herramientas.
@@ -23,6 +23,7 @@ El cliente puede ingresar la fecha y el peso, registrándolo en el historial de 
 ### Registro de Actividad
 El cliente puede dar de alta actividades realizadas, incluyendo actividades de running, cycling y swimming. Se solicitan los datos correspondientes por pantalla.
 
+
 ### Mostrar Informe
 Muestra un informe con los datos del cliente, los cambios de peso y las actividades realizadas. Se muestra el peso con asteriscos ocultando el valor real.
 
@@ -35,6 +36,7 @@ Se detallan las clases principales involucradas en el programa:
 + Running: Hereda de Actividad y almacena datos específicos de la actividad de Running, como ritmo y elevación.
 + Cycling: Hereda de Actividad y almacena datos específicos de la actividad de Cycling, como cadencia.
 + Swimming: Hereda de Actividad y almacena datos específicos de la actividad de Swimming, como número de largos y tipo de natación.
++ InformePDF: Genera un informe en PDF utilizando la librería iText.
 
 Se ha utilizado una interfaz IMostrable para estandarizar la impresión por pantalla de los datos de cualquier clase. Los datos se persistiten en fichero, y se utiliza la librería GSON.
 
